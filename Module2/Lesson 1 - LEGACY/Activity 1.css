@@ -1,0 +1,26 @@
+* {
+  font-size: 28px;
+  font-weight: 500;
+  font-family: 'Open Sans', system-ui, sans-serif;
+}
+
+h3 {
+  color: purple;
+}
+
+h4 {
+  color: deeppink;
+}
+
+.heading2-class {
+  color: tomato;
+}
+
+#unique-heading2 {
+  color: navy;
+}
+
+h5,
+p {
+  color: steelblue;
+}

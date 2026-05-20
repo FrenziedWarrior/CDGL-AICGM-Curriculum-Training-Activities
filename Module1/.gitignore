@@ -1,0 +1,12 @@
+.replit
+.replit.backup
+replit.nix
+replit.md
+.config/
+.cache/
+.upm/
+.breakpoints
+.local/
+.agents/
+.replit_*
+.replitignore

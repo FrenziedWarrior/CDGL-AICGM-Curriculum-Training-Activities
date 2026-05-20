@@ -1,0 +1,15 @@
+h1,
+p {
+  color: teal;
+  padding: 1rem;
+}
+
+h1 {
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+p {
+  text-align: right;
+  font-style: italic;
+}

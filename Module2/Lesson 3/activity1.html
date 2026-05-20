@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <title>🧙 The Grand Spell Book</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #f5ead6;
+        font-family: 'Georgia', serif;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
+      }
+
+      .spell-book {
+        background-color: #fdf6e3;
+        border: 4px solid #5c3d1e;
+        border-radius: 12px;
+        width: 580px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+      }
+
+      hr {
+        border: none;
+        border-top: 2px dashed #5c3d1e;
+        width: 100%;
+      }
+
+      ul.ingredients {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+      }
+      /* TASK 1: Style the book title */
+      .book-title {
+        font-size: 38px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+        color: #8719d6;
+      }
+      /* TASK 2: Style the spell name */
+      .spell-name {
+        font-size: 26px;
+        font-weight: bold;
+        color: #da4838;
+        font-style: italic;
+      }
+      /* TASK 3: Style the ingredients list */
+      .ingredients {
+        font-size: 18px;
+        color: #4a235a;
+        font-style: italic;
+        line-height: 2.2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="spell-book">
+      <p class="book-title">📖 The Grand Spell Book</p>
+      <hr />
+
+      <p class="spell-name">✨ Spell of Infinite Wisdom ✨</p>
+      <hr />
+
+      <ul class="ingredients">
+        <li>🌿 3 leaves of Moonwhisper Fern</li>
+        <li>💧 2 drops of Dragon Tear Water</li>
+        <li>🍄 1 Silver Starshroom (crushed)</li>
+        <li>🌙 A pinch of Midnight Dust</li>
+      </ul>
+    </div>
+  </body>
+</html>

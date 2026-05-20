@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 6 Activity 3 - Here's a Dropdown</title>
+  </head>
+  <body>
+    <form
+      action="/action_page.php"
+      oninput="
+        x.value = (
+          (parseInt(s1.value) + parseInt(s2.value) + parseInt(s3.value)) /
+          3
+        ).toFixed(2)
+      "
+    >
+      <fieldset>
+        <legend>Enter your cricket scores</legend>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" />
+
+        <p>Select game type & enter your scores:</p>
+        <select name="game-type-s1" id="game-type-s1">
+          <option value="t20">T20</option>
+          <option value="odi">ODI</option>
+          <option value="test">Test</option>
+        </select>
+        <input type="number" name="s1" id="s1" /> <br /><br />
+
+        <select name="game-type-s2" id="game-type-s2">
+          <option value="t20">T20</option>
+          <option value="odi">ODI</option>
+          <option value="test">Test</option>
+        </select>
+        <input type="number" name="s2" id="s2" /> <br /><br />
+
+        <select name="game-type-s3" id="game-type-s3">
+          <option value="t20">T20</option>
+          <option value="odi">ODI</option>
+          <option value="test">Test</option>
+        </select>
+        <input type="number" name="s3" id="s3" /> <br /><br />
+
+        Your average: <output name="x" for="s1 s2 s3"></output>
+      </fieldset>
+    </form>
+  </body>
+</html>

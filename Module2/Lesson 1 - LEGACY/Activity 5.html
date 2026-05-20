@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 2 - Lesson 1 - Activity 5 - Selectors</title>
+    <style>
+      * {
+        background-color: teal;
+        color: white;
+      }
+
+      h1 {
+        text-transform: uppercase;
+      }
+
+      h1,
+      p {
+        text-align: right;
+        font-style: italic;
+      }
+
+      #id-selector {
+        color: yellow;
+        text-decoration: underline;
+      }
+
+      .common-class {
+        font-style: normal;
+        font-family: monospace;
+        font-weight: 900;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Blog Article about Selectors</h1>
+    <p>
+      Pay attention to how the <span class="common-class">element</span>,
+      <span id="id-selector" class="common-class">ID</span>,
+      <span class="common-class">class</span>,
+      <span class="common-class">group</span> &
+      <span class="common-class">universal</span> selectors are working here.
+    </p>
+  </body>
+</html>

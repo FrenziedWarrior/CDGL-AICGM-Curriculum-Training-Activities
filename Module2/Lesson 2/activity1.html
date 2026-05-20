@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Spotify – Background Properties</title>
+    <style>
+      /* ==================== PRE-WRITTEN ==================== */
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      .sidebar {
+        width: 200px;
+        background: #000;
+        color: white;
+        padding: 24px 16px;
+        position: fixed;
+        top: 0;
+        bottom: 70px;
+      }
+      .logo {
+        color: #1db954;
+        font-size: 1.3em;
+        font-weight: bold;
+        margin-bottom: 24px;
+      }
+      .sidebar a {
+        display: block;
+        color: #aaa;
+        text-decoration: none;
+        margin: 10px 0;
+        font-size: 0.87em;
+      }
+      .sidebar a.active {
+        color: white;
+        font-weight: bold;
+      }
+
+      .main {
+        margin-left: 200px;
+        padding: 24px 24px 90px;
+        color: white;
+        font-family: Arial, sans-serif;
+      }
+      .heading {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 6px;
+      }
+      .subheading {
+        font-size: 0.85em;
+        color: #aaa;
+        margin-bottom: 22px;
+      }
+      .section-title {
+        font-size: 1em;
+        font-weight: bold;
+        margin: 24px 0 12px;
+      }
+      .row {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+      }
+
+      .card {
+        width: 155px;
+        border-radius: 10px;
+        padding: 14px;
+        cursor: pointer;
+      }
+      .cover {
+        height: 110px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3em;
+      }
+      .card h3 {
+        font-size: 0.85em;
+        color: white;
+      }
+      .card p {
+        font-size: 0.73em;
+        color: #aaa;
+        margin-top: 3px;
+      }
+
+      .bar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #181818;
+        border-top: 1px solid #282828;
+        padding: 12px 24px;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        color: white;
+      }
+      .bar .icon {
+        font-size: 2em;
+      }
+      .bar .info h4 {
+        font-size: 0.85em;
+      }
+      .bar .info p {
+        font-size: 0.72em;
+        color: #aaa;
+      }
+      .bar .controls {
+        margin-left: auto;
+        display: flex;
+        gap: 18px;
+        font-size: 1.3em;
+        cursor: pointer;
+      }
+
+      /* ==================== YOUR TASK ==================== */
+
+      .c1 {
+        background-color: #4b55be;
+      }
+      .c2 {
+        background-color: #640909;
+      }
+      .c3 {
+        background-color: #1b413a;
+      }
+      .c4 {
+        background-color: #5e2203;
+      }
+      .c5 {
+        background-color: #1a3031;
+      }
+      .c6 {
+        background-color: #251a33;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-image: radial-gradient(
+          circle,
+          rgba(255, 255, 255, 0.08) 1px,
+          transparent 1px
+        );
+        background-size: 24px 24px;
+
+        /* Task 1: Change the page colour — Try: #121212 / #1a1a2e / #000000 */
+        background-color: #062206;
+
+        /* Task 2: Should the dot pattern tile? Try: repeat / no-repeat / repeat-x */
+        background-repeat: repeat;
+
+        /* Task 3: Where does the pattern start? Try: center / top / top right */
+        background-position: center;
+
+        /* Task 4: Scroll the page slowly — Try: fixed / scroll */
+        background-attachment: fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo">● Spotify</div>
+      <a href="#" class="active">🏠 Home</a>
+      <a href="#">🔍 Search</a>
+      <a href="#">📚 Your Library</a>
+      <a href="#" style="margin-top: 20px">💚 Liked Songs</a>
+      <a href="#">🎧 Chill Mix</a>
+      <a href="#">🔥 Top Hits</a>
+      <a href="#">🌙 Sleep Playlist</a>
+    </div>
+
+    <div class="main">
+      <div class="heading">What's your mood today? 🎧</div>
+      <div class="subheading">Pick a song and let the music do the rest!</div>
+
+      <div class="section-title">🔥 Trending Globally</div>
+      <div class="row">
+        <div class="card c1">
+          <div class="cover">🎤</div>
+          <h3>Anti-Hero</h3>
+          <p>Taylor Swift</p>
+        </div>
+        <div class="card c2">
+          <div class="cover">🎵</div>
+          <h3>Flowers</h3>
+          <p>Miley Cyrus</p>
+        </div>
+        <div class="card c3">
+          <div class="cover">🎶</div>
+          <h3>Dynamite</h3>
+          <p>BTS</p>
+        </div>
+        <div class="card c4">
+          <div class="cover">💃</div>
+          <h3>Unholy</h3>
+          <p>Sam Smith</p>
+        </div>
+      </div>
+
+      <div class="section-title">🎸 Made For You</div>
+      <div class="row">
+        <div class="card c5">
+          <div class="cover">🌟</div>
+          <h3>Bad Guy</h3>
+          <p>Billie Eilish</p>
+        </div>
+        <div class="card c6">
+          <div class="cover">🎼</div>
+          <h3>Shape of You</h3>
+          <p>Ed Sheeran</p>
+        </div>
+        <div class="card c1">
+          <div class="cover">🎹</div>
+          <h3>Blinding Lights</h3>
+          <p>The Weeknd</p>
+        </div>
+        <div class="card c2">
+          <div class="cover">🎧</div>
+          <h3>Levitating</h3>
+          <p>Dua Lipa</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bar">
+      <div class="icon">🎵</div>
+      <div class="info">
+        <h4>Anti-Hero</h4>
+        <p>Taylor Swift</p>
+      </div>
+      <div class="controls">⏮ &nbsp; ⏸ &nbsp; ⏭</div>
+    </div>
+  </body>
+</html>
