@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 4 - Lesson 3 - Activity 2 - Loops in JS</title>
+  </head>
+  <body>
+    <h2>JavaScript For Loop</h2>
+    <ul id="demo"></ul>
+    <script>
+      var fruits = [
+        'Apple',
+        'Grapes',
+        'Guava',
+        'Watermelon',
+        'Dragon Fruit',
+        'Banana',
+        'Kiwi',
+      ];
+      var text = '';
+      var i;
+      for (i = 0; i < fruits.length; i++) {
+        text += "<li>" + fruits[i] + '</li>';
+      }
+      document.getElementById('demo').innerHTML = text;
+    </script>
+  </body>
+</html>
