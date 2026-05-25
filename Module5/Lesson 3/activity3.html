@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Module 5 - Lesson 3 - Activity 3 - Eval</title>
+  </head>
+  <body>
+    <p>Click the button to evaluate/execute JavaScript code/expressions.</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="result"></p>
+
+    <script>
+      function myFunction() {
+        var x = 100;
+        var y = 20;
+
+        var a = eval('x + y');
+        var b = eval('2 * x + 2 * y');
+        var c = eval('y - x');
+
+        var res = [a, b, c].join("<br>"); // Join all expression results
+
+        document.getElementById('result').innerHTML = res;
+      }
+    </script>
+  </body>
+</html>

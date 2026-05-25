@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Module 5 - Lesson 3 - Activity 2 - JavaScript Array Mapping</title>
+  </head>
+  <body>
+    <p>Square every element in the array:</p>
+
+    <p id="product_value"></p>
+
+    <script>
+      var numbers = [28, 6, 19, 95];
+
+      function squareNumber(num) {
+        return num ** 2;
+      }
+
+      var newarray = numbers.map(squareNumber);
+
+      document.getElementById('product_value').innerHTML = newarray;
+    </script>
+  </body>
+</html>
