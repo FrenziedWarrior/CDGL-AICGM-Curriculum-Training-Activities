@@ -1,0 +1,44 @@
+body {
+  background-image: linear-gradient(to bottom, darkblue, indigo);
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 100vh;
+}
+
+.page-header {
+  background-image: linear-gradient(to right, purple, coral);
+  border-radius: 16px;
+  text-align: center;
+  color: white;
+}
+
+.fact-card {
+  background-color: mediumblue;
+  text-align: center;
+  border-radius: 12px;
+  color: white;
+}
+
+.fact-card h2 {
+  color: coral;
+}
+
+.star {
+  width: 60px;
+  height: 60px;
+  background-color: yellow;
+  border-radius: 50%;
+  animation: abhishek 2s infinite alternate;
+}
+
+@keyframes abhishek {
+  from {
+    background-color: yellow;
+  }
+  to {
+    background-color: white;
+  }
+}
+
+.footer-text {
+}

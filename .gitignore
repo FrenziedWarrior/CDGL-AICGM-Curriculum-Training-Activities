@@ -10,3 +10,6 @@ replit.md
 .agents/
 .replit_*
 .replitignore
+StudentProjects/
+cdgldb.db
+.vscode/
