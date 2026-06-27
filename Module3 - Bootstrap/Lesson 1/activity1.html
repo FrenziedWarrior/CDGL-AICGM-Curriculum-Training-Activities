@@ -9,22 +9,59 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
     <style>
-      .col {
+      h1 {
         text-align: center;
+        color: #FF5A43;
+      }
+
+      .container {
         border: 1px solid black;
+        background-color: lightblue;
+        height: 1000px;
+      }
+
+      .hobby-card {
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 20px;
+        background-color: #fff8e1;
+        border: 1px solid #FF5A43;
       }
     </style>
-  </head>
+  
+</head>
 
   <body>
-    <h3>Equal width column grid</h3>
+    <h1>My Hobby Cards</h1>
+
     <div class="container">
       <div class="row">
-        <div class="col">column 1</div>
-        <div class="col">column 2</div>
-        <div class="col">column 3</div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="hobby-card">
+            <h3>Drawing</h3>
+            <p>I love drawing</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="hobby-card">
+            <h3>Football</h3>
+            <p>I love football</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="hobby-card">
+            <h3>Reading</h3>
+            <p>I love reading</p>
+          </div>
+        </div>
+
       </div>
     </div>
+
   </body>
 </html>
