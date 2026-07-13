@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M1 L6 A1 - Forms in HTML</title>
+  </head>
+  <body>
+    <h1>Personal Details Form</h1>
+
+    <form>
+      <fieldset>
+        <legend>Fill out all the fields:</legend>
+        <p>
+          <label for="myName">Name:</label>
+          <input type="text" id="myName" name="name" />
+        </p>
+
+        <p>
+          <label for="myEmail">Email:</label>
+          <input type="email" id="myEmail" name="email" />
+        </p>
+
+        <p>
+          <label for="myPassword">Password:</label>
+          <input type="password" id="myPassword" name="password" />
+        </p>
+
+        <p>Gender:</p>
+        <p>
+          <label for="m">
+            <input type="radio" name="gender" id="m" /> Male <br />
+          </label>
+
+          <label for="f">
+            <input type="radio" name="gender" id="f" /> Female <br />
+          </label>
+
+          <label for="o">
+            <input type="radio" name="gender" id="o" /> Other <br />
+          </label>
+        </p>
+
+        <p>Which level of course do you prefer:</p>
+        <p>
+          <label for="b">
+            <input type="checkbox" name="level" id="b" /> Beginners <br />
+          </label>
+
+          <label for="i">
+            <input type="checkbox" name="level" id="i" /> Intermediate <br />
+          </label>
+
+          <label for="a">
+            <input type="checkbox" name="level" id="a" /> Advanced <br />
+          </label>
+        </p>
+
+        <p>
+          <label for="referral">Where did you hear about us?</label>
+          <select id="referral" name="referral">
+            <option value="family">Family - Word of Mouth</option>
+            <option value="media">Social Media</option>
+            <option value="friends">Friends</option>
+            <option value="other">Other</option>
+          </select>
+        </p>
+
+        <input type="submit" value="Sign Up" />
+        <input type="reset" value="Reset" />
+      </fieldset>
+    </form>
+  </body>
+</html>

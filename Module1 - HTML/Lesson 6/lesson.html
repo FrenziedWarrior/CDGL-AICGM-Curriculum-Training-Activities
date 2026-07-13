@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Apollo Hospital</h1>
+    <p>Fill up this form to book an appointment.</p>
+
+    <form>
+      <fieldset>
+        <legend><b>Personal Details</b></legend>
+
+        <label for="">Your name:</label> <br />
+        <input
+          type="text"
+          id="my-name"
+          name="name"
+          placeholder="Enter your full name"
+        />
+
+        <br /><br />
+
+        <label for="">Your patient ID:</label> <br />
+        <input
+          type="text"
+          id="my-name"
+          name="name"
+          placeholder="Enter your full name"
+        />
+
+        <label for="my-dob">Date of Birth:</label> <br />
+        <input
+          type="date"
+          id="my-dob"
+          name="dob"
+          placeholder="Enter your birth date"
+        />
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Visit Details</legend>
+
+        <label>Reason for visit</label>
+
+        <input type="radio" name="reason" id="fever" /> Fever <br />
+        <input type="radio" name="reason" id="cold" /> Cold <br />
+        <input type="radio" name="reason" id="headache" /> Headache <br />
+        <input type="radio" name="reason" id="minor" /> Minor injury
+        <br /><br />
+
+        <label for="doctor">Choose your doctor:</label>
+        <select>
+          <option value="">Select a doctor:</option>
+          <option value="dr-ray">Dr. Ray - Dentist</option>
+          <option value="dr-lee">Dr. Lee - General</option>
+          <option value="dr-scott">Dr. Scott - Spinal Injury</option>
+        </select>
+
+        <br><br>
+
+        <label>Notes for the doctor?</label> <br>
+        <textarea
+          name="notes"
+          id="notes"
+          placeholder="Eg, I have a sore throat"
+          rows="5"
+          cols="40"
+        ></textarea>
+      </fieldset>
+
+      <br>
+
+      <fieldset>
+        <legend>Preferred Day for Visit</legend>
+
+        <input type="checkbox"> Monday
+        <input type="checkbox"> Tuesday
+        <input type="checkbox"> Wednesday
+        <input type="checkbox"> Thursday
+        <input type="checkbox"> Friday
+        <input type="checkbox"> Saturday
+        <input type="checkbox"> Sunday
+      </fieldset>
+
+      <input type="submit" value="Book an Appointment">
+    </form>
+  </body>
+</html>

@@ -2,14 +2,21 @@
 <html>
   <head>
     <title>My Food Diary</title>
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    /> -->
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
     />
     <style>
       body {
         background-color: linen;
-        font-family: Arial, sans-serif;
         text-align: center;
         padding: 30px;
       }
@@ -20,15 +27,13 @@
       abbr {
         color: chocolate;
         font-weight: bold;
-        cursor: help;
       }
       blockquote {
         border-left: 4px solid chocolate;
         padding-left: 15px;
-        color: dimgray;
-        font-style: italic;
         text-align: left;
         display: inline-block;
+        font-style: italic;
       }
       hr {
         border-color: chocolate;
@@ -39,15 +44,17 @@
     <p class="display-1">MY FOOD DIARY</p>
     <p class="display-2">My Top Dishes</p>
     <p class="display-3">Fun Food Facts</p>
-    <p class="display-4">Food Guide <small>by Alex</small></p>
+    <p class="display-4">
+      Food Guide <small class="text-muted">by Alex</small>
+    </p>
 
     <hr />
     <h2>Did You Know?</h2>
-    <p>
+    <p class="lead">
       Pizza is the <mark>most popular</mark> food ordered by kids around the
       world.
     </p>
-    <p>It takes about 30 minutes to bake a perfect homemade pizza.</p>
+    <p class="font-weight-bold">It takes about 30 minutes to bake a perfect homemade pizza.</p>
 
     <hr />
     <h2>Cooking Style</h2>
@@ -58,9 +65,9 @@
 
     <hr />
     <h2>Food Quote</h2>
-    <blockquote>
+    <blockquote class="blockquote">
       <p>"First we eat, then we do everything else."</p>
-      <p>— M.F.K. Fisher</p>
+      <footer class="blockquote-footer">M.F.K. Fisher</footer>
     </blockquote>
   </body>
 </html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M1L6 - Doctor's Appointment Form</title>
+  </head>
+  <body>
+    <h1>Apollo Hospital - Doctor's Appointment Form</h1>
+    <p>Fill in the form below to book your appointment</p>
+    <hr />
+
+    <form>
+      <fieldset>
+        <legend>
+          <h3>Personal Details</h3>
+        </legend>
+
+        <label for="name">Your name:</label> <br />
+        <input type="text" id="name" placeholder="Enter full name" />
+
+        <br /><br />
+
+        <label for="patient-id">Patient ID:</label> <br />
+        <input type="password" id="patient-id" placeholder="Enter secret ID" />
+
+        <br /><br />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" />
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Your Visit</legend>
+
+        <label for="doctor">Choose your doctor</label> <br />
+        <select id="doctor">
+          <option value="">Select a doctor</option>
+          <option value="dr-ray">Dr. Ray - General</option>
+          <option value="dr-lee">Dr. Lee - Liver</option>
+        </select>
+
+        <br /><br />
+
+        <label for="notes">Any notes?</label> <br />
+        <textarea
+          id="notes"
+          rows="3"
+          cols="35"
+          placeholder="Eg: I have a sore throat"
+        ></textarea>
+      </fieldset>
+ 
+
+      <br>
+
+
+      <fieldset>
+        <legend>Preferred Visit Day</legend>
+        
+        <input type="checkbox" name="day"> Monday <br>
+        <input type="checkbox" name="day"> Wednesday <br>
+        <input type="checkbox" name="day"> Friday <br>
+
+        <br><br>
+
+        <label>Why are you visiting?</label>
+        <input type="radio" name="reason" > Fever <br>
+        <input type="radio" name="reason" > Cold <br>
+        <input type="radio" name="reason" > Headache <br>
+      </fieldset>
+
+      <input type="submit" value="Book appointment">
+      <input type="reset" value="Clear form">
+ 
+    </form>
+  </body>
+</html>
