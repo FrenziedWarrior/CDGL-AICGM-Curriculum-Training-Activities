@@ -9,16 +9,15 @@
       body {
         background-color: darkblue;
         color: white;
-        font-family: "Times New Roman", sans-serif;
+        font-family: "";
       }
 
 
       /* Typography + Text Shadow — big bold title with an orange shadow */
       .hero-name {
-        font-size: 60px;
-        font-weight: bold;
+        font-size: 4rem;
         color: yellow;
-        text-shadow: 3px 3px orange;
+        text-shadow: 3px 3px 5px orange;
       }
 
 
@@ -27,28 +26,29 @@
         font-style: italic;
         color: lightblue;
         text-transform: capitalize;
+        letter-spacing: 10px;
       }
 
 
       /* Text Transform + Text Decoration — section headings in CAPS with underline */
       .label {
         text-transform: uppercase;
-        text-decoration: underline;
+        text-decoration: underline wavy;
         color: coral;
       }
 
 
       /* Typography — powers stand out in bold green */
       .power {
-        color: lightgreen;
-        font-weight: 700;
+        font-weight: bold;
+        color: green;
       }
 
 
       /* Text Decoration — weaknesses are crossed out */
       .weakness {
-        color: gray;
         text-decoration: line-through;
+        color: red;
       }
 
 
@@ -56,11 +56,14 @@
       .badge {
         font-size: 28px;
         font-weight: bold;
-        color: black;
-        background-color: gold;
-        transform: rotate(15deg);
-        /* width: 50%; */
+        color: gold;
+        background-color: black;
         display: inline-block;
+        transform: rotate(10deg);
+      }
+
+      .badge:hover {
+        transform: rotate(-10deg);
       }
 
       

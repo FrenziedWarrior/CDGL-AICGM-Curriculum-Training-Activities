@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 2000px;
+      }
+
+      .div-item {
+        color: white;
+        width: 450px;
+        padding: 1rem;
+      }
+
+      .div-item p {
+        margin: 0;
+      }
+
+      .parent-container {
+        height: 400px;
+        border: 2px solid black;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container1 {
+        background-color: indigo;
+      }
+
+      .container2 {
+        background-color: darkorchid;
+      }
+
+      .container3 {
+        background-color: mediumorchid;
+        /* position: absolute;
+        bottom: 0px; */
+
+        /* position: relative;
+        top: 300px;
+        left: 30px; */
+      }
+
+      .container4 {
+        background-color: violet;
+        position: sticky;
+        top: 0px;
+      }
+
+      .container5 {
+        background-color: thistle;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent-container">
+
+      <div class="div-item container1">
+        <p>This is container One</p>
+      </div>
+
+      <div class="div-item container2">
+        <p>This is container Two</p>
+      </div>
+
+      <div class="div-item container3">
+        <p>This is container Three</p>
+      </div>
+
+      <div class="div-item container4">
+        <p>This is container Four</p>
+      </div>
+
+      <div class="div-item container5">
+        <p>This is container Five</p>
+      </div>
+    </div>
+  </body>
+</html>

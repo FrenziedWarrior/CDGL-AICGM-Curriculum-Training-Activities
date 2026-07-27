@@ -3,91 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>M1 L6 Doctor's Appointment Form</title>
   </head>
+
   <body>
-    <h1>Apollo Hospital</h1>
-    <p>Fill up this form to book an appointment.</p>
+
+    <h1>🏥 Fortis Hospital Appointment Form</h1>
+    <p>Fill in the form below to book an appointment</p>
 
     <form>
-      <fieldset>
-        <legend><b>Personal Details</b></legend>
-
-        <label for="">Your name:</label> <br />
-        <input
-          type="text"
-          id="my-name"
-          name="name"
-          placeholder="Enter your full name"
-        />
-
-        <br /><br />
-
-        <label for="">Your patient ID:</label> <br />
-        <input
-          type="text"
-          id="my-name"
-          name="name"
-          placeholder="Enter your full name"
-        />
-
-        <label for="my-dob">Date of Birth:</label> <br />
-        <input
-          type="date"
-          id="my-dob"
-          name="dob"
-          placeholder="Enter your birth date"
-        />
-      </fieldset>
-
-      <br />
 
       <fieldset>
-        <legend>Visit Details</legend>
+        <legend><h4>Personal Information</h4></legend>
 
-        <label>Reason for visit</label>
+        <label for="name">Patient's name</label> <br>
+        <input type="text" id="name" name="name" placeholder="Enter patient name"> <br><br>
+        
+        <label for="medical-id">Private Medical ID</label> <br>
+        <input type="password" id="medical-id" name="medical-id" placeholder="Enter secret ID" required> <br><br>
 
-        <input type="radio" name="reason" id="fever" /> Fever <br />
-        <input type="radio" name="reason" id="cold" /> Cold <br />
-        <input type="radio" name="reason" id="headache" /> Headache <br />
-        <input type="radio" name="reason" id="minor" /> Minor injury
-        <br /><br />
+        <label for="email">Patient Email Address</label> <br>
+        <input type="email" name="email" id="email"> <br><br>
 
-        <label for="doctor">Choose your doctor:</label>
-        <select>
-          <option value="">Select a doctor:</option>
-          <option value="dr-ray">Dr. Ray - Dentist</option>
-          <option value="dr-lee">Dr. Lee - General</option>
-          <option value="dr-scott">Dr. Scott - Spinal Injury</option>
-        </select>
 
-        <br><br>
-
-        <label>Notes for the doctor?</label> <br>
-        <textarea
-          name="notes"
-          id="notes"
-          placeholder="Eg, I have a sore throat"
-          rows="5"
-          cols="40"
-        ></textarea>
+        <label for="dob">Date of Birth</label> <br>
+        <input type="date" id="dob" name="dob"> <br><br>
       </fieldset>
 
       <br>
 
       <fieldset>
-        <legend>Preferred Day for Visit</legend>
+        <legend><h3>Visit Details</h3></legend>
 
-        <input type="checkbox"> Monday
-        <input type="checkbox"> Tuesday
-        <input type="checkbox"> Wednesday
-        <input type="checkbox"> Thursday
-        <input type="checkbox"> Friday
-        <input type="checkbox"> Saturday
-        <input type="checkbox"> Sunday
+        <label for="doctor">Choose your doctor</label> <br>
+        <select id="doctor" name="doctor">
+          <option value="">Select one:</option>
+          <option value="lee">Dr. Lee - General</option>
+          <option value="sharma">Dr. Sharma - Dentist</option>
+          <option value="khan">Dr. Khan - Child Specialist</option>
+        </select>
+        <br><br>
+
+        <label>Reason for Visit</label> <br>
+
+        <label>
+          <input type="radio" name="reason1" value="c"> Cold <br>
+        </label>
+
+        <label>
+          <input type="radio" name="reason2" value="f"> Fever <br>
+        </label>
+
+        <label>
+          <input type="radio" name="reason3" value="t"> Tooth Ache <br>
+        </label>
+
+        <label>
+          <input type="radio" name="reason4" value="o"> Other <br>
+        </label>
+
+        <br>
+
+        <label for="notes">Any notes for the doctor?</label> <br>
+        <textarea name="notes" id="notes" rows="5" cols="60"></textarea>
       </fieldset>
 
-      <input type="submit" value="Book an Appointment">
+      <br>
+
+      <fieldset>
+        <legend>Preferred Day of Visit</legend>
+
+      </fieldset>
+
+      <input type="submit" value="Book your Appointment">
+
     </form>
   </body>
 </html>

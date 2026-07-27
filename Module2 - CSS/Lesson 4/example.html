@@ -5,30 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Examples - Module 2 Lesson 4</title>
     <style>
+
         ul > li {
             color: blue;
         }
 
+        li > a {
+            color: red;
+        }
+
         ol > li {
             color: magenta;
+        }
+
+        /* ALL SIBLINGS */
+        h1 ~ p {
+            font-weight: bold;
+            color: brown;
+        }
+
+        /* NEXT SIBLING */
+        h1 + p {
+            color: gold;
+        }
+
+        ul > li:nth-child(1 + 2) {
+            background-color: skyblue;
         }
     </style>
 </head>
 
 <body>
     <h1>Heading</h1>
+    <p>Para 1</p>
+    <p>Para 2</p>
+    <p>Para 3</p>
+    <p>Para 4</p>
+    <p>Para 5</p>
+
 
     <ul>
-        <li>
-            First item
-            <ol>
-                <li>Alyan</li>
-                <li>Gunjan</li>
-                <li>Swastika</li>
-            </ol>
-        </li>
-        <li>Second item</li>
-        <li>Third item</li>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
     </ul>
 </body>
 

@@ -10,27 +10,43 @@
     <p id="demo"></p>
     <script>
       var day;
-      switch (new Date().getDay()) {
+      switch (new Date().getMonth()) {
         case 0:
-          day = 'Sunday';
+          day = 'January';
           break;
         case 1:
-          day = 'Monday';
+          day = 'February';
           break;
         case 2:
-          day = 'Tuesday';
+          day = 'March';
           break;
         case 3:
-          day = 'Wednesday';
+          day = 'April';
           break;
         case 4:
-          day = 'Thursday';
+          day = 'May';
           break;
         case 5:
-          day = 'Friday';
+          day = 'June';
           break;
         case 6:
-          day = 'Saturday';
+          day = 'July';
+          break;
+        case 7:
+          day = 'August';
+          break;
+        case 8:
+          day = 'Sept';
+          break;
+        case 9:
+          day = 'Oct';
+          break;
+        case 10:
+          day = 'Nov';
+          break;
+        case 11:
+          day = 'Dec';
+          break;
       }
       document.getElementById('demo').innerHTML = 'Today is ' + day;
     </script>

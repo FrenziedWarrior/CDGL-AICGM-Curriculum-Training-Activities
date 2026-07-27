@@ -32,21 +32,16 @@ body {
   width: 60px;
   height: 60px;
   background-color: yellow;
-  border-radius: 50%;
-  animation: twinkle 2s infinite alternate;
-  /* margin: 0 auto; */
+  border-radius: 10%;
+  animation: twinkle 1s infinite alternate;
+  margin: 0 auto;
 }
 
 @keyframes twinkle {
   from {
-    background-color: gold;
+    transform: scale(1);
   }
   to {
-    background-color: white;
+    transform: scale(2);
   }
-}
-
-.footer-text {
-  text-align: center;
-  color: coral;
 }

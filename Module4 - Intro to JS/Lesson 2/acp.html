@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M4 L2 - Intro to Functions</title>
+</head>
+<body>
+    <button onclick="sum(99, 4)">
+        Add 2 numbers
+    </button>
+
+    <button onclick="difference(99, 4)">
+        Subtract 2 numbers
+    </button>
+
+    <button onclick="product(99, 4)">
+        Mutiply 2 numbers
+    </button>
+
+    <button onclick="quotient(99, 4)">
+        Divide 2 numbers
+    </button>
+
+    <p id="result"></p>
+
+    <script>
+        function sum(a, b) {
+            let sum = a + b;
+            document.getElementById("result").innerHTML = `The sum of ${a} + ${b} = ${sum}`;
+        }
+
+        function difference(a, b) {
+            let sum = a - b;
+            document.getElementById("result").innerHTML = `The difference of ${a} - ${b} = ${sum}`;
+        }
+
+        function product(a, b) {
+            let sum = a * b;
+            document.getElementById("result").innerHTML = `The product of ${a} * ${b} = ${sum}`;
+        }
+
+        function quotient(a, b) {
+            let sum = a / b;
+            document.getElementById("result").innerHTML = `The quotient of ${a} / ${b} = ${sum}`;
+        }
+
+    </script>
+</body>
+</html>
