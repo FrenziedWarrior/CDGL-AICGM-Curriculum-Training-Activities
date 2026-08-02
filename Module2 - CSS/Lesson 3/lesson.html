@@ -9,31 +9,44 @@
       body {
         background-color: darkblue;
         color: white;
+        font-family: "NAME OF THE FONT";
       }
 
 
       /* Typography + Text Shadow — big bold title with an orange shadow */
       .hero-name {
+        font-size: 60px;
+        font-weight: 900;
+        text-shadow: -10px -10px 5px orange, 6px 6px 5px orange;
       }
 
 
       /* Typography + Text Transform — tagline becomes Title Case */
       .tagline {
+        font-style: italic;
+        color: lightblue;
+        text-transform: capitalize;
       }
 
 
       /* Text Transform + Text Decoration — section headings in CAPS with underline */
       .label {
+        text-transform: uppercase;
+        text-decoration: underline dashed;
       }
 
 
       /* Typography — powers stand out in bold green */
       .power {
+        color: green;
+        font-weight: bold;
       }
 
 
       /* Text Decoration — weaknesses are crossed out */
       .weakness {
+        color: crimson;
+        text-decoration: line-through;
       }
 
 
@@ -41,6 +54,18 @@
       .badge {
         font-size: 28px;
         font-weight: bold;
+        color: black;
+        background-color: gold;
+        padding: 8px;
+        transform: rotate(15deg);
+        display: inline-block;
+        margin: 30px 0;
+        transition: all 1s ease-in;
+      }
+
+      .badge:hover {
+        letter-spacing: 5px;
+        transform: rotate(45deg);
       }
 
       /* Typography — footer text */

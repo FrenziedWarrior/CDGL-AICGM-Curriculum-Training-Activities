@@ -1,82 +1,67 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>M1 L6 Doctor's Appointment Form</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Apollo Hospital - Doctor's Appointment Form</h1>
+  <p>Fill in the details below to book your appointment</p>
 
-  <body>
+  <form>
+    <fieldset>
+      <legend style="text-align:center">
+        <h3>Personal Information</h3>
+      </legend>
 
-    <h1>🏥 Fortis Hospital Appointment Form</h1>
-    <p>Fill in the form below to book an appointment</p>
+      <label for="patient-name">Patient's Name</label> <br>
+      <input type="text" name="TIGER" id="patient-name" placeholder="Enter your full name"> <br><br>
 
-    <form>
+      <label for="patient-id">Patient ID</label> <br>
+      <input type="password" name="patient-id" id="patient-id" placeholder="Enter private ID"> <br><br>
 
-      <fieldset>
-        <legend><h4>Personal Information</h4></legend>
+      <label for="dob">Date of Birth</label> <br>
+      <input type="date" name="dob" id="dob">
+    </fieldset>
 
-        <label for="name">Patient's name</label> <br>
-        <input type="text" id="name" name="name" placeholder="Enter patient name"> <br><br>
-        
-        <label for="medical-id">Private Medical ID</label> <br>
-        <input type="password" id="medical-id" name="medical-id" placeholder="Enter secret ID" required> <br><br>
+    <br>
 
-        <label for="email">Patient Email Address</label> <br>
-        <input type="email" name="email" id="email"> <br><br>
+    <fieldset>
+      <legend style="text-align:center">
+        <h3>Your Visit</h3>
+      </legend>
 
+      <label for="doctor">Choose your doctor</label> <br>
 
-        <label for="dob">Date of Birth</label> <br>
-        <input type="date" id="dob" name="dob"> <br><br>
-      </fieldset>
+      <select id="doctor" name="doctor">
+        <option>Select one</option>
+        <option>Dr. Rajpoot</option>
+        <option>Dr. Choudhary</option>
+        <option>Dr. Karmakar</option>
+      </select>
 
-      <br>
+      <p>Why are you visiting?</p>
+      <label>
+        <input type="checkbox" name="reason" id="fever"> Fever
+      </label> <br>
 
-      <fieldset>
-        <legend><h3>Visit Details</h3></legend>
+      <label>
+        <input type="checkbox" name="reason" id="cold"> Cold
+      </label> <br>
 
-        <label for="doctor">Choose your doctor</label> <br>
-        <select id="doctor" name="doctor">
-          <option value="">Select one:</option>
-          <option value="lee">Dr. Lee - General</option>
-          <option value="sharma">Dr. Sharma - Dentist</option>
-          <option value="khan">Dr. Khan - Child Specialist</option>
-        </select>
-        <br><br>
+      <label>
+        <input type="checkbox" name="reason" id="headache"> Headache
+      </label> <br>
 
-        <label>Reason for Visit</label> <br>
+      <label for="notes">Notes for the doctor</label> <br>
+      <textarea name="notes" id="notes" rows="5" cols="40"></textarea>
+    </fieldset>
 
-        <label>
-          <input type="radio" name="reason1" value="c"> Cold <br>
-        </label>
+    <br>
 
-        <label>
-          <input type="radio" name="reason2" value="f"> Fever <br>
-        </label>
+    <input type="submit" value="Book your appointment">
+  </form>
 
-        <label>
-          <input type="radio" name="reason3" value="t"> Tooth Ache <br>
-        </label>
-
-        <label>
-          <input type="radio" name="reason4" value="o"> Other <br>
-        </label>
-
-        <br>
-
-        <label for="notes">Any notes for the doctor?</label> <br>
-        <textarea name="notes" id="notes" rows="5" cols="60"></textarea>
-      </fieldset>
-
-      <br>
-
-      <fieldset>
-        <legend>Preferred Day of Visit</legend>
-
-      </fieldset>
-
-      <input type="submit" value="Book your Appointment">
-
-    </form>
-  </body>
+</body>
 </html>

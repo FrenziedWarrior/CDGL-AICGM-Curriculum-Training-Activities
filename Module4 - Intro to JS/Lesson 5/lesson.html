@@ -1,24 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>M4 L5</title>
-  </head>
-  <body>
-    <p id="result"></p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M4 L5</title>
+  <style>
+    #square {
+      background-color: midnightblue;
+      width: 50px;
+      height: 50px;
+      transition: all 0.5s ease-in;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="generate()">Generate Number</button>
+  <p id="result"></p>
+  <div id="square"></div>
 
-    <script>
-      function add(a, b, c) {
-        return a + b + c;
+  <script>
+    let numberList = [];
+
+    function generate() {
+      let num = Math.floor(Math.random() * 360);
+
+      numberList.push(num);
+
+      document.getElementById("result").innerHTML = numberList;
+
+      document.getElementById("square").style.transform = `rotate(${num}deg)`;
+    }
+
+    document.addEventListener("keydown", function(event) {
+      document.getElementById("result").innerHTML = event.key;
+      if (event.key == "ArrowUp") {
+        document.getElementById("square").style.transform = `translateY(-100px)`;
       }
 
-      function average(a, b, c) {
-        return add(a, b, c) / 3;
+      else if (event.key == "ArrowDown") {
+        document.getElementById("square").style.transform = `translateY(100px)`;
       }
-
-      let result = average(12342, 49234, 99324);
-      document.getElementById("result").textContent = result;
-    </script>
-  </body>
+    });
+  </script>
+</body>
 </html>

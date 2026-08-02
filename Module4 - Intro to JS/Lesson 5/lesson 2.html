@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M4 L5</title>
+</head>
+<body>
+  <button onclick="getRandomNumber()">Generate Random Number</button>
+
+  <p id="result1"></p>
+  <p id="result2"></p>
+  <p id="result3"></p>
+
+  <script>
+    // let r = Math.random();
+    // document.getElementById("result1").innerHTML = r;
+    
+    // let n = r * 100;
+    // document.getElementById("result2").innerHTML = n;
+
+    // let randomNumber = Math.floor(n);
+    // document.getElementById("result3").innerHTML = randomNumber;
+
+    function getRandomNumber() {
+      let emojis = ["😀", "😍", "🥶", "🥵", "😵"];
+      let randomNumber = Math.floor(Math.random() * emojis.length);
+      document.getElementById("result1").innerHTML = emojis[randomNumber];
+    }
+  </script>
+</body>
+</html>

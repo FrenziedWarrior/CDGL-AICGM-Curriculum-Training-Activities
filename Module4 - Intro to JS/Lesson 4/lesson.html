@@ -43,28 +43,23 @@
         <div class="card-body">
           <h5 class="card-title">Contact Details</h5>
           <ul class="list-group list-group-flush">
-
             <li class="list-group-item">
-                <span class="card-label d-block">Name</span>
-                <strong id="name"></strong>
+              <span class="card-label d-block">Name</span>
+              <strong id="name"></strong>
             </li>
-
             <li class="list-group-item">
-                <span class="card-label d-block">Phone</span>
-                <strong id="phone"></strong>
+              <span class="card-label d-block">Phone</span>
+              <strong id="phone"></strong>
             </li>
-
             <li class="list-group-item">
-                <span class="card-label d-block">School</span>
-                <strong id="school"></strong>
+              <span class="card-label d-block">School</span>
+              <strong id="school"></strong>
             </li>
-
             <li class="list-group-item">
-                <span class="card-label d-block">City</span>
-                <strong id="city"></strong>
+              <span class="card-label d-block">City</span>
+              <strong id="city"></strong>
             </li>
-          
-        </ul>
+          </ul>
         </div>
       </div>
 
@@ -72,31 +67,36 @@
       <div class="card shadow-sm">
         <div class="card-body">
           <h6>JavaScript Object Used</h6>
-          <pre id="codeDisplay" class="bg-light p-3 rounded border">
-          </pre>
+          <pre id="display"></pre>
         </div>
       </div>
     </div>
 
     <script>
-        // STEP 1: Create a contact object
-        let myContact = {
-            name: "Abhishek Karmakar",
-            phone: "0001112323",
-            school: "Codingal Institute of Coding",
-            city: "Paris"
-        };
+      let myContact = {
+        name: "Abhishek Karmakar",
+        phone: "+91-1230001230",
+        school: "Codingal Institute of Javascript",
+        city: "Paris"
+      };
 
-        // STEP 2: Use the "dot" notation
-        document.getElementById("name").textContent = myContact.name;
-        document.getElementById("phone").textContent = myContact.phone;
+      let myContact2 = {
+        name: "",
+        phone: "",
+        school: "",
+        friends: ["A", "B", "C", "D"]
+      }
 
-        // STEP 3: Use the "bracket" notation
-        document.getElementById("school").textContent = myContact["school"];
-        document.getElementById("city").textContent = myContact["city"];
+      // THIS IS THE DOT NOTATION OF ACCESSING OBJECT PROPERTIES
+      document.getElementById("name").innerHTML = myContact.name;
+      document.getElementById("phone").innerHTML = myContact.phone;
 
-        // STEP 4: Display the whole object
-        document.getElementById("codeDisplay").textContent = JSON.stringify(myContact);
+
+      // THIS IS THE BRACKET NOTATION OF ACCESSING OBJECT PROPERTIES
+      document.getElementById("school").innerHTML = myContact["school"];
+      document.getElementById("city").innerHTML = myContact["city"];
+
+      document.getElementById("display").innerHTML = JSON.stringify(myContact);
     </script>
   </body>
 </html>

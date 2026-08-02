@@ -1,22 +1,26 @@
 body {
   background-color: darkblue;
-  background-image: linear-gradient(to right, purple, midnightblue);
+  background: linear-gradient(45deg, darkblue, navy);
   background-repeat: no-repeat;
   height: 100vh;
+  font-family: 'Arial';
 }
 
 .page-header {
-  background: linear-gradient(to bottom, coral, purple);
   color: white;
   text-align: center;
-  border-radius: 15px;
-  padding: 10px;
+  background: linear-gradient();
+  padding: 15px;
+  border-radius: 10px;
 }
 
 .fact-card {
-  background-color: navy;
-  border-radius: 12px;
+  background-color: midnightblue;
   color: white;
+  border-radius: 12px;
+  padding: 10px;
+  margin-top: 15px;
+  text-align: center;
 }
 
 .fact-card h2 {
@@ -24,21 +28,26 @@ body {
 }
 
 .star {
-  width: 60px;
-  height: 60px;
-  background: yellow;
+  width: 50px;
+  height: 50px;
+  background-color: gold;
   border-radius: 50%;
   animation: twinkle 2s infinite alternate;
 }
 
 @keyframes twinkle {
   0% {
-    background: green;
-    transform: translateY(0);
+    background-color: gold;
+    transform: rotate(0) translateX(0);
+  }
+
+  50% {
+    background-color: purple;
+    transform: rotate(360deg) translateX(50px);
   }
 
   100% {
-    background: yellow;
-    transform: translateY(50vh);
+    background-color: white;
+    transform: rotate(0) translateX(0);
   }
 }
