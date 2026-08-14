@@ -40,6 +40,15 @@
         border-radius: 20px;
         cursor: pointer;
       }
+
+      .apply-shake {
+        animation: shake 0.5s infinite alternate;
+      }
+
+      @keyframes shake {
+        to { transform: translateX(-5px)}
+        from { transform: translateX(5px)}
+      }
     </style>
   </head>
   <body>
@@ -79,7 +88,27 @@
     <p id="zoo-status"></p>
 
     <script>
+      function openZoo() {
+        document.getElementById("zone1").innerHTML = "Lion";
 
+        // # means id="zone2"
+        document.querySelector("#zone2").innerHTML = "Giraffe";
+
+        document.querySelector("#zone3").innerHTML = "Ostrich";
+
+        document.getElementById("total").innerHTML = "3";
+
+        document.getElementById("zoo").style.backgroundColor = "lightgreen";
+
+        document.querySelector("#zoo-status").innerHTML = document.title + "is now open!";
+
+        let zones = document.querySelectorAll(".zone");
+
+        for (let element of zones) {
+          element.style.transform = "rotate(20deg)";
+          element.classList.add("apply-shake");
+        }
+      }
     </script>
   </body>
 </html>

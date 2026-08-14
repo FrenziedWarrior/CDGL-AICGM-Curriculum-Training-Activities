@@ -14,21 +14,62 @@
 
     <script>
         // Create a variable x with the value 2
-        let x = 29823792;
+        // let x = 29823792;
 
         // Create a variable y with the value 5
-        let y = 53495794;
+        // let y = 53495794;
 
         // Create a variable sum
-        let sum = x + y;
+        // let sum = x + y;
 
 
 
 
 
 
-        document.getElementById("result").innerHTML = "The sum of x & y = " + sum;
+        // document.getElementById("result").innerHTML = "The sum of x & y = " + sum;
 
+
+        class Calculator {
+            constructor(x, y) {
+                this.x = x;
+                this.y = y;
+            }
+
+            // Method
+            displayNumbers() {
+                document.write(`( ${this.x} , ${this.y} )<br>`)
+            }
+
+            add() {
+                document.write(this.x + this.y + "<br>");
+            }
+            
+            subtract() {
+                document.write(this.x - this.y + "<br>");
+            }
+
+            multiply() {
+
+            }
+        }
+
+        let c = new Calculator(100, 67);
+        c.displayNumbers();
+        c.add()
+        c.subtract();
+
+
+        let namecharacter = "ash";
+        
+        let searchResult = document.querySelector("." + namecharacter);
+
+        if (searchResult) {
+            searchResult.style.display = "flex";
+        } else {
+            // NOT FOUND
+        }
+        
     </script>
 </body>
 </html>
