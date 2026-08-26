@@ -1,0 +1,86 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Screen Cover Effect</title>
+
+    <style>
+      body {
+        margin: 0;
+
+        overflow: hidden; /* Prevents scrollbars if content grows */
+
+        font-family: sans-serif;
+      }
+
+      #abhishekCover {
+        position: fixed; /* Stays in place relative to the viewport */
+
+        top: 0;
+
+        left: 0;
+
+        width: 0; /* Starts hidden */
+
+        height: 0; /* Starts hidden */
+
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.8
+        ); /* Dark, slightly transparent background */
+
+        color: white;
+
+        display: flex; /* Helps center the text */
+
+        justify-content: center; /* Centers horizontally */
+
+        align-items: center; /* Centers vertically */
+
+        font-size: 0em; /* Starts with very small text */
+
+        opacity: 0; /* Starts fully transparent */
+
+        transition:
+          width 3s ease-in-out,
+          height 3s ease-in-out,
+          opacity 3s ease-in-out,
+          font-size 3s ease-in-out; /* Smooth transition over 3 seconds */
+
+        z-index: 1000; /* Ensures it's on top of other content */
+      }
+
+      #abhishekCover.active {
+        width: 100vw; /* 100% of viewport width */
+
+        height: 100vh; /* 100% of viewport height */
+
+        opacity: 1; /* Fully visible */
+
+        font-size: 5em; /* Larger text */
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Welcome to the Page!</h1>
+
+    <p>Watch what happens...</p>
+
+    <div id="abhishekCover">Abhishek67</div>
+
+    <script>
+      // Get the covering element
+
+      const coverElement = document.getElementById('abhishekCover');
+
+      // After a small delay (e.g., 2 seconds), add the 'active' class
+
+      setTimeout(() => {
+        coverElement.classList.add('active');
+      }, 2000); // 2000 milliseconds = 2 seconds
+    </script>
+  </body>
+</html>

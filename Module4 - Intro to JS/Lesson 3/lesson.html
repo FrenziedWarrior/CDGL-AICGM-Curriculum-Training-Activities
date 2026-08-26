@@ -6,12 +6,62 @@
     <title>Document</title>
 </head>
 <body>
-    <ul id="fruitsList">
-    </ul>
+    <ol id="fruitsList"></ol>
 
     <script>
-        let date = new Date();
-        document.write("Today's date is: " + date.toDateString());
+        let name = "AaRoN ThAPa";
+
+        // STRING METHODS (or STRING FUNCTIONS)
+        document.write(name.toUpperCase());
+        document.write("<br>");
+
+        document.write(name.toLowerCase());
+        document.write("<br>")
+
+        document.write(name.startsWith("a"));
+        document.write("<br>");
+
+        let upperCaseName = name.toUpperCase();
+
+        document.write(name.includes("ron"));
+        document.write("<br>");
+
+        // let r = Math.random();
+        // console.log(r);
+
+        // let s = r * 100;
+        // console.log(s);
+
+        // let n = Math.floor(s) + 1;
+        // console.log(n);
+       
+        let lower = 1;
+        let upper = 100;
+
+        let randomNumber = lower + Math.floor(Math.random() * upper);
+        document.write(randomNumber);
+
+        // LIST or an ARRAY
+        let fruits = ["Apple", "Banana", "Tomato", "Grapes"];
+
+        let text = "";
+
+        console.log(fruits[0]);
+
+
+        // let i = 0             THIS IS THE INITIAL VALUE OF THE LOOP VARIABLE
+        // i < fruits.length     ONLY REPEAT UNTIL i IS THE LENGTH OF THE ARRAY
+        // i = i + 1             KEEP INCREASING i BY 1 UNTIL THE CONDITION IS TRUE
+
+        // INDEX - 0, 1, 2, 3
+
+        for (let i = 0; i < fruits.length; i++) {
+            text = text + `<li>${fruits[i]}</li>`;
+        }
+
+        document.getElementById("fruitsList").innerHTML = text;
+
+        
     </script>
 </body>
 </html>

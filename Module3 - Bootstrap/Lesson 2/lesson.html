@@ -18,10 +18,9 @@
         margin-top: 25px;
       }
 
-      .blockquote {
+      blockquote {
         border-left: 4px solid chocolate;
-        padding-left: 15px;
-        font-style: italic;
+        padding-left: 20px;
         background-color: wheat;
         display: inline-block;
       }
@@ -29,40 +28,49 @@
   </head>
 
   <body class="text-center">
-    <p class="display-1">MY FOOD DIARY</p>
-    <p class="display-2">My Top Dishes</p>
-    <p class="display-3">Fun Food Facts</p>
-    <p class="display-4">Food Guide by <span class="small text-danger">Abhishek Karmakar</span></p>
+    <p>MY FOOD DIARY</p>
+    <p>My Top Dishes</p>
+    <p>Fun Food Facts</p>
+    <p>Food Guide by ________</p>
 
     <hr />
     <h2>Did You Know?</h2>
-    <p class="lead mark">Pizza is the <mark>most popular food</mark> ordered by kids around the world.</p>
+    <p>Pizza is the most popular food ordered by kids around the world.</p>
     <p>It takes about 30 minutes to bake a perfect homemade pizza.</p>
 
     <hr />
     <h2>Cooking Style</h2>
-    <p class="fw-light">
-      My favourite way to cook with family is a good old <abbr>BBQ</abbr> on a sunny day.
-      <abbr title="">FIFA</abbr>
+    <p>
+      My favourite way to cook with family is a good old BBQ on a sunny day.
     </p>
 
     <hr />
 
     <h2>Food Quote</h2>
-    <blockquote class="blockquote">
-      <p>First we eat, then we do everything else.</p>
-      <p class="blockquote-footer text-end">M.F.K. Fisher</p>
+    <blockquote class="blockquote fst-italic">
+      <p><q>First we eat, then we do everything else.</q></p>
+      <p class="blockquote-footer">M.F.K. Fisher</p>
     </blockquote>
 
-    <hr>
+    <hr />
 
-    <table>
+    <table class="table table-bordered table-hover table-success">
       <tr>
-        <th>Food I like</th>
-        <th>Why I like it?</th>
+        <th>Foods that I like</th>
+        <th>Why I like it</th>
       </tr>
-    </table>
 
-    <form></form>
+      <tbody class="table-group-divider">
+        <tr>
+          <td>Club Sandwich</td>
+          <td>Because lots of fillings</td>
+        </tr>
+
+        <tr>
+          <td>Chhole Bhature</td>
+          <td>Because its unhealthy</td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>

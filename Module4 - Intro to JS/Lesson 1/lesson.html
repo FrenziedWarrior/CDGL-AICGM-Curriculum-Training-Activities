@@ -3,73 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M4 L1 Intro to JS</title>
+    <title>Document</title>
 </head>
-<body>
 
-    <p id="sum"></p>
-    <p id="sub"></p>
-    <p id="mul"></p>
-    <p id="divide"></p>
+<body>
+    <h1 id="myHeading"></h1>
+    <p id="myPara"></p>
+
 
     <script>
-        // Create a variable x with the value 2
-        // let x = 29823792;
+        // This is my first time writing Javascript with Ayan & Shivam
+        document.getElementById("myHeading").innerHTML = "Javascript Lesson 1";
+        document.getElementById("myPara").innerHTML = "Javascript Lesson 1";
 
-        // Create a variable y with the value 5
-        // let y = 53495794;
+        // Where does this get displayed? Go to Developer Tools.
+        console.log("Abhishek Karmakar");
 
-        // Create a variable sum
-        // let sum = x + y;
+        let x = 36;
+        let y = 6;
+        document.getElementById("myHeading").innerHTML = x + y;
 
+        let name = "abcdefghi";
+        console.log(typeof(name));
 
+        console.log(typeof(x));
 
+        // % is the Remainder Operator
+        document.getElementById("myPara").innerHTML = "The sum of x and y is" + (x + y);
 
-
-
-        // document.getElementById("result").innerHTML = "The sum of x & y = " + sum;
-
-
-        class Calculator {
-            constructor(x, y) {
-                this.x = x;
-                this.y = y;
-            }
-
-            // Method
-            displayNumbers() {
-                document.write(`( ${this.x} , ${this.y} )<br>`)
-            }
-
-            add() {
-                document.write(this.x + this.y + "<br>");
-            }
-            
-            subtract() {
-                document.write(this.x - this.y + "<br>");
-            }
-
-            multiply() {
-
-            }
-        }
-
-        let c = new Calculator(100, 67);
-        c.displayNumbers();
-        c.add()
-        c.subtract();
-
-
-        let namecharacter = "ash";
+        document.getElementById("myPara").innerHTML = "The sum of " + x + "and" + y + "is" + (x + y);
         
-        let searchResult = document.querySelector("." + namecharacter);
+        document.getElementById("myPara").innerHTML = `The sum of ${x} and ${y} = ${x+y}`;
 
-        if (searchResult) {
-            searchResult.style.display = "flex";
-        } else {
-            // NOT FOUND
-        }
-        
     </script>
 </body>
 </html>

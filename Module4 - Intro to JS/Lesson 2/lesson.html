@@ -3,28 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M4 L2 - Intro to Functions</title>
+    <title>Document</title>
 </head>
 <body>
-    <button type="button" onclick="add(5, 9)">Calculate</button>
+    <button onclick="hi()">Click Me</button>
 
-    <button type="button" onclick="changeColor('red')">
-        Change to Red
-    </button>
+    <button onclick="add()">Add</button>
+
+    <input >
+    <input >
 
     <p id="result"></p>
 
     <script>
-        // let a = 5;
-        // let b = 9;
-
+        // CREATED A FUNCTION DEFINITION
         function add(a, b) {
             let sum = a + b;
-            document.getElementById("result").innerHTML = sum;
+            document.write(sum);
         }
 
-        function changeColor(c) {
-            document.getElementById("result").style.color = c;
+        // CALLING A FUNCTION
+        // ALSO PASSING PARAMETER VALUES
+        // add();
+
+        // document.write("My name is Aaron and I like math.");
+        // document.write("My name is Abhishek and I like winters.")
+        // document.write("My name is Lord King and I like kingdoms.")
+
+        function intro(name, preference) {
+            document.getElementById("result").innerHTML = `My name is ${name} and I like ${preference}. <br>`;
+        }
+
+        intro("Aaron", "math");
+        intro("Sam", "comic books");
+
+        function greeting() {
+            document.getElementById("result").innerHTML = "Hello there!";
         }
     </script>
 </body>

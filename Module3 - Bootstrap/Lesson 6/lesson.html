@@ -15,7 +15,7 @@
       }
 
       .slide-forest {
-        background: darkgreen;
+        background-image: url("forest.jpg");
       }
 
       .slide-ocean {
@@ -37,67 +37,72 @@
 
       #forest {
         background: honeydew;
-        height: 700px;
+        height: 1000px;
       }
 
       #ocean {
         background: aliceblue;
-        height: 700px;
+        height: 1000px;
       }
 
       #desert {
         background: lightyellow;
-        height: 700px;
-      }
-
-      .nav-link.active {
-        border-bottom: 2px solid #fff;
+        height: 1000px;
       }
     </style>
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#safariNav" >
     <!-- TOPIC 1, 2, 3: CAROUSEL -->
     <div id="safariCarousel" class="carousel slide">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#safariCarousel" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#safariCarousel" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#safariCarousel" data-bs-slide-to="2"></button>
+        <button data-bs-target="#safariCarousel" data-bs-slide-to="0" class="active"></button>
+        <button data-bs-target="#safariCarousel" data-bs-slide-to="1"></button>
+        <button data-bs-target="#safariCarousel" data-bs-slide-to="2"></button>
       </div>
 
       <div class="carousel-inner">
-        <div class="carousel-item active safari-slide slide-desert">🌿 Forest Safari</div>
-        <div class="carousel-item safari-slide slide-forest">🌊 Ocean Safari</div>
-        <div class="carousel-item safari-slide slide-ocean">🏜️ Desert Safari</div>
+        <div class="carousel-item safari-slide slide-forest active">🌿 Forest Safari</div>
+        <div class="carousel-item safari-slide slide-ocean">🌊 Ocean Safari</div>
+        <div class="carousel-item safari-slide slide-desert">🏜️ Desert Safari</div>
       </div>
 
       <button class="carousel-control-prev" data-bs-target="#safariCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon"></span>
       </button>
+
       <button class="carousel-control-next" data-bs-target="#safariCarousel" data-bs-slide="next">
         <span class="carousel-control-next-icon"></span>
       </button>
-
     </div>
 
     <!-- TOPIC 4: SCROLLSPY -->
     <nav id="safariNav" class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
       <span class="navbar-brand">Safari Guide</span>
       <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="#forest">Forest</a></li>
-        <li class="nav-item"><a class="nav-link" href="#ocean">Ocean</a></li>
-        <li class="nav-item"><a class="nav-link" href="#desert">Desert</a></li>
+        <li class="nav-item">
+          <a href="#forest" class="nav-link">Forest</a>
+        </li>
+        <li class="nav-item">
+          <a href="#ocean" class="nav-link">Ocean</a>
+        </li>
+        <li class="nav-item">
+          <a href="#desert" class="nav-link">Desert</a>
+        </li>
       </ul>
     </nav>
 
-    <div class="container" data-bs-spy="scroll" data-bs-target="#safariNav">
+    <div class="container">
+
       <div id="forest" class="section">
         <h2>🌿 Forest Safari</h2>
         <p>Explore tall trees and discover tigers, elephants, and monkeys!</p>
       </div>
+
       <div id="ocean" class="section">
         <h2>🌊 Ocean Safari</h2>
         <p>Dive deep and meet dolphins, sharks, and colourful clownfish!</p>
       </div>
+
       <div id="desert" class="section">
         <h2>🏜️ Desert Safari</h2>
         <p>
@@ -105,7 +110,7 @@
         </p>
       </div>
     </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>
